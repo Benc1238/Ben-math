@@ -1,0 +1,137 @@
+:root {
+    --purple: #9762b2;
+    --dark: #1b1b1b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	color: #fff;
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: var(--purple);
+    background: linear-gradient(to right bottom, var(--dark), var(--purple));
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.kontener {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    max-width: 1300px;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    position: absolute;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+header {
+    flex: 1;
+}
+
+.logo {
+    width: 140px;
+    height: 94vh;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.bg__img {
+    position: absolute;
+
+}
+
+.bg__img--button {
+    top: 0;
+    right: 68%;
+    height: 30vh;
+	opacity: 0.55;
+    animation: slideDown 12s linear infinite;
+}
+
+.bg__img--dots {
+    top: 0;
+    left: 75%;
+    height: 110vh;
+    animation: rotate 25s linear infinite;
+}
+
+.bg__img--logo {
+    left: 0;
+    top: 50%;
+    width: 50%;
+    opacity: 0.25;
+    transform: translate(-50%, -50%);
+}
+
+
+header {
+    flex: 1;
+}
+
+h1 {
+    position: relative;
+    left: 30%;
+    font-size: 60px;
+}
+
+p {
+	position: relative;
+    left: 10%;
+	text-align: center;
+	padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 22px;
+    line-height: 30px;
+    width: 78%;
+}
+
+a { 
+    position: relative;
+    left: 25%;
+    margin-bottom: 5cm;
+    padding-bottom: 40px;
+    padding: 20px;
+    margin: 1cm;
+    border-style: none;
+	text-decoration: none;
+    color: #fff;
+    background: var(--purple);
+    background: linear-gradient(to right top, var(--purple), rgba(255, 255, 255, 0.6));
+    border-radius: 20px;
+    box-shadow:0 0 0 6px var(--purple);
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+    a:hover {
+      box-shadow: 0 0 0 5px white, 0 0 0 5px var(--purple);
+      border-radius: 40px;
+	}
+@keyframes slideDown {
+    from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh)}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
